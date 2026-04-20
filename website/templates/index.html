@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credentials — The Discord Bot Built for Serious Servers</title>
+  <link rel="icon" type="image/svg+xml" href="/static/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/static/logo.svg" alt="Credentials" width="32" height="32" />
+        <span>Credentials</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#commands">Commands</a>
+        <a href="#setup">Setup</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#" class="btn btn-primary nav-cta">Add to Discord</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="container">
+      <div class="hero-badge">Built for communities that mean it</div>
+      <h1 class="hero-title">
+        One bot.<br />
+        Every tool<br />
+        <span class="hero-accent">your server needs.</span>
+      </h1>
+      <p class="hero-sub">
+        Credentials handles moderation, giveaways, tickets, custom permissions, welcome messages, and a full fun suite — without the bloat. Configure once, run forever.
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary btn-lg">Add to Discord</a>
+        <a href="#commands" class="btn btn-ghost btn-lg">Browse Commands</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">60+</span>
+          <span class="stat-label">Commands</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">8</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Configurable</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE STRIP -->
+  <div class="feature-strip">
+    <div class="container">
+      <div class="feature-strip-inner">
+        <div class="strip-item">Per-server prefix</div>
+        <div class="strip-dot"></div>
+        <div class="strip-item">Role-based access</div>
+        <div class="strip-dot"></div>
+        <div class="strip-item">Bypass roles</div>
+        <div class="strip-dot"></div>
+        <div class="strip-item">Giveaway rigging</div>
+        <div class="strip-dot"></div>
+        <div class="strip-item">Auto-logging</div>
+        <div class="strip-dot"></div>
+        <div class="strip-item">Ticket system</div>
+        <div class="strip-dot"></div>
+        <div class="strip-item">Welcome messages</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What it does</span>
+        <h2 class="section-title">Everything. Configured your way.</h2>
+        <p class="section-sub">Every setting is per-server. Every command is permission-controlled. Nothing is locked behind a paywall.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--large">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Full Moderation Suite</h3>
+          <p>Ban, kick, timeout, mute, warn, purge, lock channels, set slowmode, and manage nicknames. Every action gets logged automatically to your designated log channel.</p>
+          <div class="feature-tags">
+            <span>ban</span><span>kick</span><span>timeout</span><span>warn</span><span>mute</span><span>purge</span><span>lock</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <h3>Role-Based Permissions</h3>
+          <p>Set which roles are required to use any command. Mark certain roles as bypass roles that skip all restrictions entirely.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Prefix Per Server</h3>
+          <p>Run <code>/prefix !</code> and immediately use <code>!ban</code>, <code>!kick</code> and everything else. Each server has its own prefix stored persistently.</p>
+        </div>
+
+        <div class="feature-card feature-card--large">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Giveaway System</h3>
+          <p>Start timed giveaways with multiple winners. Enable rigging to guarantee a specific user wins while still looking fair to everyone else. Reroll anytime. Full lifecycle management.</p>
+          <div class="feature-tags">
+            <span>giveaway start</span><span>--rig @user</span><span>giveaway end</span><span>giveaway reroll</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <h3>Ticket System</h3>
+          <p>Deploy a ticket panel with one command. Users open private channels with support staff. Add or remove members at any time. Close cleanly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+            </svg>
+          </div>
+          <h3>Welcome & Leave Messages</h3>
+          <p>Custom welcome and leave messages with variables for username, server name, and member count. Auto-assign a role on join.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/>
+            </svg>
+          </div>
+          <h3>Mod Log</h3>
+          <p>Every mod action — bans, kicks, timeouts, warns, purges — posts to your designated log channel with full context and timestamps.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3>Fun Commands</h3>
+          <p>8ball, coinflip, dice rolls, rock paper scissors, roast, compliment, ship, rate, mock, jokes, facts, and more. Keeps the server alive.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMANDS -->
+  <section class="section section--dark" id="commands">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Command Reference</span>
+        <h2 class="section-title">Every command, documented.</h2>
+      </div>
+
+      <div class="cmd-tabs" id="cmdTabs">
+        <button class="cmd-tab active" data-cat="moderation">Moderation</button>
+        <button class="cmd-tab" data-cat="utility">Utility</button>
+        <button class="cmd-tab" data-cat="roles">Roles</button>
+        <button class="cmd-tab" data-cat="giveaway">Giveaway</button>
+        <button class="cmd-tab" data-cat="tickets">Tickets</button>
+        <button class="cmd-tab" data-cat="welcome">Welcome</button>
+        <button class="cmd-tab" data-cat="fun">Fun</button>
+      </div>
+
+      <div class="cmd-content" id="cmdContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PERMISSION SYSTEM -->
+  <section class="section" id="perms">
+    <div class="container">
+      <div class="perm-split">
+        <div class="perm-text">
+          <span class="section-label">Permission System</span>
+          <h2 class="section-title">You control who does what.</h2>
+          <p>Credentials has a layered permission system built around how real servers actually work.</p>
+          <div class="perm-list">
+            <div class="perm-item">
+              <div class="perm-badge perm-badge--bypass">Bypass Role</div>
+              <div class="perm-desc">Full access to all commands, no questions asked. Assign this to your head mods or admins.</div>
+            </div>
+            <div class="perm-item">
+              <div class="perm-badge perm-badge--cmd">Command Role</div>
+              <div class="perm-desc">Require a specific role to run any command. Set different requirements per command.</div>
+            </div>
+            <div class="perm-item">
+              <div class="perm-badge perm-badge--discord">Discord Perms</div>
+              <div class="perm-desc">Base Discord permissions still apply. Layered on top of Credentials' own system.</div>
+            </div>
+          </div>
+        </div>
+        <div class="perm-demo">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-title">Permission examples</span>
+            </div>
+            <pre><code><span class="c-comment"># Give a role full bypass access</span>
+<span class="c-cmd">/bypass add</span> <span class="c-arg">@Head Moderator</span>
+
+<span class="c-comment"># Restrict a command to a specific role</span>
+<span class="c-cmd">/cmdrole set</span> <span class="c-arg">ban @Senior Mod</span>
+
+<span class="c-comment"># Remove a command restriction</span>
+<span class="c-cmd">/cmdrole clear</span> <span class="c-arg">ban</span>
+
+<span class="c-comment"># Change server prefix</span>
+<span class="c-cmd">/prefix</span> <span class="c-arg">!</span>
+
+<span class="c-comment"># Now use the new prefix</span>
+<span class="c-cmd">!ban</span> <span class="c-arg">@user Spamming</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETUP GUIDE -->
+  <section class="section section--dark" id="setup">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Getting Started</span>
+        <h2 class="section-title">Up in under three minutes.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Invite the bot</h3>
+            <p>Click the invite link and select your server. Grant Administrator permission for full functionality, or pick individual permissions if you prefer granular control.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Set your prefix</h3>
+            <p>Run <code>/prefix !</code> (or whatever you prefer). All commands will now respond to that prefix. Default is <code>/</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Configure logging</h3>
+            <p>Run <code>/logging #your-log-channel</code> to capture all moderation actions. Recommended before you do anything else.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Set bypass roles</h3>
+            <p>Run <code>/bypass add @role</code> for your senior staff so they always have full access. Add command-specific role locks with <code>/cmdrole set</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <div class="step-body">
+            <h3>Optional: tickets and welcome</h3>
+            <p>Run <code>/ticket setup</code> and <code>/welcome channel</code> to activate those systems. Everything else works out of the box.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Questions</span>
+        <h2 class="section-title">FAQ</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">Is this bot free?</button>
+          <div class="faq-a">Yes. Every feature listed on this page is free with no usage limits. There are no premium tiers.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How does giveaway rigging work?</button>
+          <div class="faq-a">When you start a giveaway with <code>--rig @user</code>, that user's entry is weighted to always win if they enter. From the outside it looks like a normal giveaway. Only the person who ran the command knows. The rigged user still has to react to enter.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can different roles have access to different commands?</button>
+          <div class="faq-a">Yes. Use <code>/cmdrole set &lt;command&gt; @role</code> to require a specific role for any command. You can stack multiple roles. Bypass roles skip all of these checks entirely.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What happens if the bot restarts?</button>
+          <div class="faq-a">All settings are stored in a SQLite database — prefixes, warnings, giveaways, bypass roles, command roles, ticket configurations, everything. Nothing is lost on restart.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Does the timeout command work on mobile?</button>
+          <div class="faq-a">Yes. The bot uses Discord's native timeout API which works across all platforms. Duration format is <code>10s</code>, <code>5m</code>, <code>2h</code>, or <code>1d</code>.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I self-host this?</button>
+          <div class="faq-a">The full source code is available. You can run it on Railway (bot) and Render (website) for free, or on any server that runs Python 3.10+.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to set it up?</h2>
+        <p>Takes less than three minutes. No configuration file, no dashboard required — everything runs through commands.</p>
+        <a href="#" class="btn btn-primary btn-lg">Add Credentials to Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="/static/logo.svg" alt="Credentials" width="28" height="28" />
+          <span>Credentials</span>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#commands">Commands</a>
+          <a href="#setup">Setup Guide</a>
+        </div>
+        <div class="footer-note">Not affiliated with Discord Inc.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // NAV SCROLL
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav--scrolled', window.scrollY > 40);
+    });
+
+    // COMMAND DATA
+    const commands = {
+      moderation: [
+        { cmd: 'ban <@user> [reason]', desc: 'Permanently ban a member from the server.' },
+        { cmd: 'unban <user_id> [reason]', desc: 'Unban a previously banned user by their ID.' },
+        { cmd: 'kick <@user> [reason]', desc: 'Kick a member from the server.' },
+        { cmd: 'timeout <@user> <time> [reason]', desc: 'Timeout a member. Time: 10s, 5m, 2h, 1d.' },
+        { cmd: 'untimeout <@user>', desc: 'Remove a timeout from a member.' },
+        { cmd: 'warn <@user> [reason]', desc: 'Issue a warning. Warns are tracked and persistent.' },
+        { cmd: 'warnings <@user>', desc: 'View all warnings for a user.' },
+        { cmd: 'clearwarnings <@user>', desc: 'Clear all warnings for a user.' },
+        { cmd: 'mute <@user> [time] [reason]', desc: 'Mute a user. Creates Muted role automatically if absent.' },
+        { cmd: 'unmute <@user>', desc: 'Remove a mute.' },
+        { cmd: 'purge <amount> [@user]', desc: 'Delete up to 500 messages, optionally from one user only.' },
+        { cmd: 'lock [#channel]', desc: 'Prevent @everyone from sending messages in a channel.' },
+        { cmd: 'unlock [#channel]', desc: 'Re-enable messaging in a locked channel.' },
+        { cmd: 'slowmode <seconds>', desc: 'Set channel slowmode. 0 to disable. Max 21600.' },
+        { cmd: 'nick <@user> [name]', desc: 'Change or reset a member\'s nickname.' },
+      ],
+      utility: [
+        { cmd: 'ping', desc: 'Check the bot\'s API response latency.' },
+        { cmd: 'prefix <new_prefix>', desc: 'Change the server command prefix. Requires Manage Server.' },
+        { cmd: 'serverinfo', desc: 'Display server statistics, owner, member count, boost level.' },
+        { cmd: 'userinfo [@user]', desc: 'Display user account info, roles, join date, warning count.' },
+        { cmd: 'avatar [@user]', desc: 'Show a user\'s avatar at full resolution.' },
+        { cmd: 'roleinfo <@role>', desc: 'Show role details: member count, permissions, creation date.' },
+        { cmd: 'invite', desc: 'Get the bot\'s invite link.' },
+        { cmd: 'uptime', desc: 'Show how long the bot has been online.' },
+        { cmd: 'botinfo', desc: 'Show bot stats: servers, users, commands, ping, uptime.' },
+        { cmd: 'help [category]', desc: 'Show all commands or commands for a specific category.' },
+      ],
+      roles: [
+        { cmd: 'role add <@user> <@role>', desc: 'Add a role to a member. Cannot exceed your own top role.' },
+        { cmd: 'role remove <@user> <@role>', desc: 'Remove a role from a member.' },
+        { cmd: 'autorole <@role>', desc: 'Set a role to automatically assign to new members.' },
+        { cmd: 'autorole off', desc: 'Disable the autorole feature.' },
+        { cmd: 'bypass add <@role>', desc: 'Grant a role bypass access to all Credentials commands.' },
+        { cmd: 'bypass remove <@role>', desc: 'Revoke bypass access from a role.' },
+        { cmd: 'bypass list', desc: 'List all bypass roles configured for this server.' },
+        { cmd: 'cmdrole set <command> <@role>', desc: 'Require a role to run a specific command.' },
+        { cmd: 'cmdrole clear <command>', desc: 'Remove role requirement from a command.' },
+      ],
+      giveaway: [
+        { cmd: 'giveaway start <time> <winners> <prize>', desc: 'Start a giveaway. Example: giveaway start 1h 2 Discord Nitro' },
+        { cmd: 'giveaway start ... --rig @user ...', desc: 'Start a rigged giveaway. The specified user will win if they enter. Invisible to others.' },
+        { cmd: 'giveaway end <message_id>', desc: 'End a giveaway early and pick winners immediately.' },
+        { cmd: 'giveaway reroll <message_id>', desc: 'Reroll a completed giveaway to pick new winners.' },
+      ],
+      tickets: [
+        { cmd: 'ticket setup <category> <@support_role>', desc: 'Configure the ticket system. Required before any ticket can be opened.' },
+        { cmd: 'ticket panel [#channel]', desc: 'Send the ticket panel embed with an Open Ticket button.' },
+        { cmd: 'ticket close', desc: 'Close and delete the current ticket channel after a 5-second delay.' },
+        { cmd: 'ticket add <@user>', desc: 'Add a user to the current ticket channel.' },
+        { cmd: 'ticket remove <@user>', desc: 'Remove a user\'s access to the current ticket channel.' },
+      ],
+      welcome: [
+        { cmd: 'welcome channel <#channel>', desc: 'Set the channel for welcome messages.' },
+        { cmd: 'welcome message <message>', desc: 'Set the welcome message. Variables: {user}, {server}, {count}' },
+        { cmd: 'leave channel <#channel>', desc: 'Set the channel for leave messages.' },
+        { cmd: 'leave message <message>', desc: 'Set the leave message. Variables: {user}, {server}' },
+        { cmd: 'logging <#channel>', desc: 'Set the channel where moderation actions are logged.' },
+        { cmd: 'logging off', desc: 'Disable mod logging.' },
+      ],
+      fun: [
+        { cmd: '8ball <question>', desc: 'Ask the magic 8-ball a yes/no question.' },
+        { cmd: 'coinflip', desc: 'Flip a coin. Heads or tails.' },
+        { cmd: 'roll [sides]', desc: 'Roll a die. Default 6 sides, supports any number.' },
+        { cmd: 'rps <rock|paper|scissors>', desc: 'Play rock paper scissors against the bot.' },
+        { cmd: 'choose <a> | <b> | <c>', desc: 'Have the bot pick from your options, separated by |.' },
+        { cmd: 'joke', desc: 'Get a random joke.' },
+        { cmd: 'fact', desc: 'Get a random interesting fact.' },
+        { cmd: 'roast [@user]', desc: 'Roast yourself or another member.' },
+        { cmd: 'compliment [@user]', desc: 'Send a genuine compliment.' },
+        { cmd: 'ship <@user1> <@user2>', desc: 'Calculate compatibility between two users.' },
+        { cmd: 'rate <thing>', desc: 'Rate anything out of 10. Consistent per server.' },
+        { cmd: 'mock <text>', desc: 'mOcK tExT tHaT lOoKs LiKe ThIs.' },
+      ],
+    };
+
+    function renderCommands(cat) {
+      const list = commands[cat];
+      const html = list.map(c => `
+        <div class="cmd-row">
+          <div class="cmd-name"><code>${c.cmd}</code></div>
+          <div class="cmd-desc">${c.desc}</div>
+        </div>
+      `).join('');
+      document.getElementById('cmdContent').innerHTML = html;
+    }
+
+    document.querySelectorAll('.cmd-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.cmd-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderCommands(tab.dataset.cat);
+      });
+    });
+
+    renderCommands('moderation');
+
+    // FAQ ACCORDION
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>
